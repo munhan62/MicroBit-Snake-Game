@@ -76,7 +76,7 @@ void Snake::move() {
 
     body->incrementMaxSize(new Node(X, Y));
     score++;
-    if (score == 25) FINISHED = true;
+    if (score == 5) FINISHED = true;
     else Fruit.refresh();
 
   }else delete body->push(new Node(X, Y));
